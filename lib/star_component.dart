@@ -20,7 +20,7 @@ class StarComponent extends PositionComponent {
     add(CircleHitbox(collisionType: CollisionType.passive));
 
     starSprite = await Sprite.load('star.png');
-    decorator.addLast(PaintDecorator.tint(Colors.yellow));
+    decorator.addLast(PaintDecorator.tint(Colors.greenAccent));
   }
 
   @override
@@ -53,7 +53,7 @@ class StarComponent extends PositionComponent {
                       size: (size / 2) * (1 - particle.progress),
                       overridePaint: _starPaint
                         ..colorFilter = ColorFilter.mode(
-                          Colors.yellow.withAlpha(
+                          Colors.greenAccent.withAlpha(
                             (255.0 * (1 - particle.progress)).round(),
                           ),
                           BlendMode.srcATop,

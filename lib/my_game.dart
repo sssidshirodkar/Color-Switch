@@ -23,17 +23,17 @@ class MyGame extends FlameGame
 
   MyGame({
     this.gameColors = const [
-      Color(0xFFFF0000),
-      Color(0xFF00FF00),
-      Color(0xFF0000FF),
-      Color(0xFFFFFF00),
+      Color(0xFFFC309B),
+      Color(0xFF7D31E7),
+      Color(0xFF03C9FD),
+      Color(0xFFE0B107),
     ],
   }) : super(
          camera: CameraComponent.withFixedResolution(width: 600, height: 1000),
        );
 
   @override
-  Color backgroundColor() => const Color(0xFF222222);
+  Color backgroundColor() => const Color(0xFF2F2741);
 
   @override
   Future<void> onLoad() async {

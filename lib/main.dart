@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
                 builder: (context, value, child) {
                   return Row(
                     children: [
-                      Icon(Icons.star, color: Colors.yellowAccent, size: 20),
+                      Icon(Icons.star, color: Colors.greenAccent, size: 20),
                       SizedBox(width: 5),
                       Text(
                         value.toString(),
